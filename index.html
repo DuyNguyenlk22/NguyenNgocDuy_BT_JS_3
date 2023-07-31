@@ -18,9 +18,9 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1>BÀI TẬP JS</h1>
-      <div class="form-group w-25">
+    <div class="w-50 mx-auto">
+      <h1 class="text-center">BÀI TẬP JS</h1>
+      <div class="form-group w-100">
         <input
           type="text"
           class="form-control"
@@ -28,105 +28,137 @@
           placeholder="Nhập vào số n"
         />
       </div>
-      <button class="btn btn-primary w-25" onclick="input_arr()">
+      <button class="btn btn-primary w-100" onclick="input_arr()">
         Thêm số
       </button>
-      <div class="alert alert-success w-25" id="array"></div>
+      <div class="alert alert-success w-100 text-center" id="array"></div>
       <hr />
-      <h2>1.Tổng các số dương trong mảng</h2>
-      <button class="btn btn-primary w-25" onclick="sumPositiveNumber()">
-        Tính tổng
-      </button>
-      <div class="alert alert-success w-25" id="kq_1"></div>
-      <hr />
-      <h2>2.Đếm có bao nhiêu số dương trong mảng</h2>
-      <button class="btn btn-primary w-25" onclick="countPositiveNumber()">
-        Đếm số dương
-      </button>
-      <div class="alert alert-success w-25" id="kq_2"></div>
-      <hr />
-      <h2>3.Tìm số nhỏ nhất trong mảng</h2>
-      <button class="btn btn-primary w-25" onclick="smallestNumber()">
-        Tìm số nhỏ nhất
-      </button>
-      <div class="alert alert-success w-25" id="kq_3"></div>
-      <hr />
-      <h2>4.Tìm số dương nhỏ nhất trong mảng</h2>
-      <button class="btn btn-primary w-25" onclick="smallestPosNumber()">
-        Tìm số dương nhỏ nhất
-      </button>
-      <div class="alert alert-success w-25" id="kq_4"></div>
-      <hr />
-      <h2>
-        5.Tìm số chẵn cuối cùng trong mảng.Nếu mảng không có giá trị chẵn thì
-        trả về -1
-      </h2>
-      <button class="btn btn-primary w-25" onclick="evenNumber()">
-        Tìm số chẵn
-      </button>
-      <div class="alert alert-success w-25" id="kq_5"></div>
-      <hr />
-      <h2>
-        6.Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn
-        đổi chỗ giá trị).
-      </h2>
-      <div class="form-group">
-        <input
-          type="number"
-          class="form-control w-25"
-          id="vitri_1"
-          placeholder="Nhập số vị trí 1"
-        />
+      <div class="row">
+        <div class="col-6">
+          <h2>1.Tổng các số dương trong mảng</h2>
+          <button class="btn btn-info w-100" onclick="sumPositiveNumber()">
+            Tính tổng
+          </button>
+          <div class="alert alert-success w-100" id="kq_1"></div>
+        </div>
+        <div class="col-6">
+          <h2>2.Đếm có bao nhiêu số dương trong mảng</h2>
+          <button class="btn btn-danger w-100" onclick="countPositiveNumber()">
+            Đếm số dương
+          </button>
+          <div class="alert alert-success w-100" id="kq_2"></div>
+        </div>
       </div>
-      <div class="form-group">
-        <input
-          type="number"
-          class="form-control w-25"
-          id="vitri_2"
-          placeholder="Nhập số vị trí 2"
-        />
+      <hr />
+      <div class="row">
+        <div class="col-6">
+          <h2>3.Tìm số nhỏ nhất trong mảng</h2>
+          <button class="btn btn-warning w-100" onclick="smallestNumber()">
+            Tìm số nhỏ nhất
+          </button>
+          <div class="alert alert-success w-100" id="kq_3"></div>
+        </div>
+        <div class="col-6">
+          <h2>4.Tìm số dương nhỏ nhất trong mảng</h2>
+          <button class="btn btn-secondary w-100" onclick="smallestPosNumber()">
+            Tìm số dương nhỏ nhất
+          </button>
+          <div class="alert alert-success w-100" id="kq_4"></div>
+        </div>
       </div>
-      <button class="btn btn-primary w-25" onclick="transfer()">Đổi chỗ</button>
-      <div class="alert alert-success w-25" id="kq_6"></div>
       <hr />
-      <h2>7.Sắp xếp mảng theo thứ tự tăng dần</h2>
-      <button class="btn btn-primary w-25" onclick="arrange()">Sắp xếp</button>
-      <div class="alert alert-success w-25" id="kq_7"></div>
-      <hr />
-      <h2>
-        8.Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố
-        thì trả về -1.
-      </h2>
-      <button class="btn btn-primary w-25" onclick="findFirstPrime()">
-        Tìm số nguyên tố
-      </button>
-      <div class="alert alert-success w-25" id="kq_8"></div>
-      <hr />
-      <h2>
-        9.Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?
-      </h2>
-      <div class="form-group">
-        <input
-          type="number"
-          class="form-control w-25"
-          id="so-thuc"
-          placeholder="Nhập số "
-        />
+      <div class="row">
+        <div class="col-6">
+          <h2 class="mb-5">
+            5.Tìm số chẵn cuối cùng trong mảng.Nếu mảng không có giá trị chẵn
+            thì trả về -1
+          </h2>
+          <button class="btn btn-primary w-100" onclick="evenNumber()">
+            Tìm số chẵn
+          </button>
+          <div class="alert alert-success w-100" id="kq_5"></div>
+        </div>
+        <div class="col-6">
+          <h2>
+            6.Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí
+            muốn đổi chỗ giá trị).
+          </h2>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control w-100"
+              id="vitri_1"
+              placeholder="Nhập số vị trí 1"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control w-100"
+              id="vitri_2"
+              placeholder="Nhập số vị trí 2"
+            />
+          </div>
+          <button class="btn btn-dark w-100" onclick="transfer()">
+            Đổi chỗ
+          </button>
+          <div class="alert alert-success w-100" id="kq_6"></div>
+        </div>
       </div>
-      <button class="btn btn-primary w-25" onclick="nhapSo()">Thêm số</button>
-      <div class="alert alert-success w-25" id="kho-so-thuc"></div>
-      <button class="btn btn-primary w-25" onclick="timSoNguyen()">
-        Đếm số nguyên
-      </button>
-      <div class="alert alert-success w-25" id="kq_9"></div>
       <hr />
-      <h2>
-        10.So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.
-      </h2>
-      <button class="btn btn-primary w-25" onclick="demSoAmDuong()">
-        So Sánh
-      </button>
-      <div class="alert alert-success w-25" id="kq_10"></div>
+      <div class="row">
+        <div class="col-6">
+          <h2 class="mb-5">7.Sắp xếp mảng theo thứ tự tăng dần</h2>
+          <button class="btn btn-primary w-100" onclick="arrange()">
+            Sắp xếp
+          </button>
+          <div class="alert alert-success w-100" id="kq_7"></div>
+        </div>
+        <div class="col-6">
+          <h2>
+            8.Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên
+            tố thì trả về -1.
+          </h2>
+          <button class="btn btn-danger w-100" onclick="findFirstPrime()">
+            Tìm số nguyên tố
+          </button>
+          <div class="alert alert-success w-100" id="kq_8"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-6">
+          <h2>
+            9.Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số
+            nguyên?
+          </h2>
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control w-100"
+              id="so-thuc"
+              placeholder="Nhập số "
+            />
+          </div>
+          <button class="btn btn-warning w-100" onclick="nhapSo()">
+            Thêm số
+          </button>
+          <div class="alert alert-success w-100" id="kho-so-thuc"></div>
+          <button class="btn btn-primary w-100" onclick="timSoNguyen()">
+            Đếm số nguyên
+          </button>
+          <div class="alert alert-success w-100" id="kq_9"></div>
+        </div>
+        <div class="col-6">
+          <h2 class="mb-5">
+            10.So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.
+          </h2>
+          <button class="btn btn-info w-100" onclick="demSoAmDuong()">
+            So Sánh
+          </button>
+          <div class="alert alert-success w-100" id="kq_10"></div>
+        </div>
+      </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
